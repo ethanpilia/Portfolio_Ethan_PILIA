@@ -2,17 +2,17 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio | Ethan PILIA</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="Logo EP.png">
+        <link rel="icon" href="docs/Logo EP.png">
     </head>
 
     <body>
         <!-- Barre - Debut --> 
         <header id="barre">
             <a href="#accueil" class="logo">
-                <img src="Logo EP - Horizontal.png" alt="Ethan Pilia">
+                <img src="docs/Logo EP - Horizontal.png" alt="Ethan Pilia">
             </a>
 
             <nav>
@@ -30,7 +30,7 @@
         <!-- Accueil - Debut -->
         <section id="accueil">
             <div class="accueil-haut">
-                <div>
+                <div class="accueil-gauche">
                     <h1>Comprendre.<br><span class="vert">Coder. Créer.</span></h1>
 
                     <p>
@@ -70,25 +70,235 @@
         
         <!-- A propos - Debut -->
         <section id="aproposdemoi">
-            <h2>À propos de moi</h2>
+            <div class="apropos">
+                <img src="docs/PDP Ethan PILIA.png" alt="Photo d'Ethan Pilia" class="photo">
+
+                <div class="apropos-texte">
+                    <h2>À propos de moi</h2>
+
+                    <p>
+                        Je m'appelle <span class="vert">Ethan Pilia</span>, j'ai <span class="vert">18 ans</span>
+                        et j'ai grandi à <span class="vert">Compiègne</span>. Ayant grandi en même temps que
+                        les technologies évoluaient autour de moi, m'orienter vers le numérique m'a semblé
+                        être un choix évident.
+                    </p>
+
+                    <p>
+                        Tout a commencé à 11 ans avec la découverte de <span class="vert">Scratch</span>,
+                        puis de <span class="vert">Python</span> à 15 ans. Aujourd'hui, je suis en
+                        <span class="vert">deuxième année de BUT Informatique</span> à l'IUT de
+                        Reims-Châlons-Charleville, avec une spécialisation en <span class="vert">C#</span>.
+                        Ce qui me plaît toujours autant, c'est de comprendre un besoin complexe pour le
+                        transformer en une <span class="vert">solution concrète</span>.
+                    </p>
+
+                    <p>
+                        En dehors de l'informatique, j'ai passé <span class="vert">11 ans au conservatoire</span>
+                        de musique, où j'ai pratiqué le <span class="vert">violon</span>, aussi bien en solo
+                        qu'en orchestre, ainsi que le chant en chorale. Ces expériences m'ont appris la
+                        rigueur et l'écoute des autres. Je pratique également le
+                        <span class="vert">badminton</span> depuis 10 ans, un sport qui me permet de me
+                        dépenser tout en m'amusant, mais aussi de développer mon esprit de compétition et
+                        ma détermination lors des tournois.
+                    </p>
+
+                    <p>
+                        Enfin, j'ai participé à plusieurs actions de <span class="vert">bénévolat</span>,
+                        notamment auprès de l'association E2RS, de l'AMAP Compiègne et de mon club de badminton.
+                        Ces expériences m'ont permis de découvrir le plaisir d'aider les autres et de
+                        donner de mon temps.
+                    </p>
+
+                    <p>
+                        Aujourd'hui, je recherche un <span class="vert">stage de 8 à 12 semaines</span>,
+                        à partir du <span class="vert">5 avril 2027</span>, afin de découvrir davantage le
+                        monde professionnel, de mettre en pratique mes compétences et de continuer à apprendre.
+                    </p>
+
+                    <a href="docs/CV Ethan PILIA.pdf" target="_blank" download class="bouton-cv">Mon CV ↓</a>
+                </div>
+            </div>
+                <h3>Langues</h3>
+                <div class="ligne-infos">
+                    <p>
+                        <img src="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/flags/4x3/fr.svg" alt="" class="drapeau">
+                        Français <span class="niveau">Langue maternelle</span>
+                    </p>
+                    <p>
+                        <img src="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/flags/4x3/gb.svg" alt="" class="drapeau">
+                        Anglais <span class="niveau">B1</span>
+                    </p>
+                    <p>
+                        <img src="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/flags/4x3/es.svg" alt="" class="drapeau">
+                        Espagnol <span class="niveau">B1</span>
+                    </p>
+                </div>
+
+                <h3>Centres d'intérêts</h3>
+                <div class="ligne-infos">
+                    <p>
+                        <img src="https://api.iconify.design/fluent-emoji-flat/violin.svg" alt="" class="icone-interet">
+                        Violon <span class="niveau">11 ans de conservatoire</span>
+                    </p>
+                    <p>
+                        <img src="https://api.iconify.design/fluent-emoji-flat/airplane.svg" alt="" class="icone-interet">
+                        Voyage
+                    </p>
+                    <p>
+                        <img src="https://api.iconify.design/fluent-emoji-flat/racing-car.svg" alt="" class="icone-interet">
+                        Formule 1
+                    </p>
+                    <p>
+                        <img src="https://api.iconify.design/fluent-emoji-flat/musical-notes.svg" alt="" class="icone-interet">
+                        Musique
+                    </p>
+                    <p>
+                        <img src="https://api.iconify.design/fluent-emoji-flat/badminton.svg" alt="" class="icone-interet">
+                        Badminton <span class="niveau">depuis 10 ans</span>
+                    </p>
+                </div>
         </section>
         <!-- A propos - Fin -->
 
         <!-- Parcours - Debut -->
         <section id="monparcours">
             <h2>Mon parcours</h2>
+            <div class="frise">
+                <div class="etape">
+                    <h4>BUT Informatique</h4>
+                    <p class="specialite">Parcours DEV · Spécialité C#</p>
+                    <p class="lieu">IUT Reims-Châlons-Charleville · depuis 2025</p>
+                </div>
+
+                <div class="etape">
+                    <h4>Baccalauréat Général</h4>
+                    <p class="specialite">Spécialités Maths et Sciences de l'Ingénieur</p>
+                    <p class="lieu">Lycée Mireille Grenet · Compiègne · 2025</p>
+                </div>
+            </div>
         </section>
         <!-- Parcours - Fin -->
 
         <!-- Experiences - Debut -->
         <section id="mesexperiences">
             <h2>Mes expériences</h2>
+            <div class="deux-colonnes">
+                <div class="colonne">
+                    <h3>En informatique</h3>
+                    <div class="frise">
+                        <div class="etape">
+                            <h4>Pass Permis Citoyen · Association E2RS</h4>
+                            <p class="specialite">Mission bénévole de 70h</p>
+                            <ul>
+                                <li>Reconditionnement de matériel numérique</li>
+                                <li>Logistique</li>
+                                <li>Accompagnement des bénéficiaires</li>
+                            </ul>
+                            <p class="lieu">Compiègne · du 20 au 31 juillet 2026</p>
+                        </div>
+
+                        <div class="etape">
+                            <h4>École d'été en informatique PIXEL</h4>
+                            <p class="specialite">Organisée par l'UTC et le laboratoire Heudiasyc</p>
+                            <ul>
+                                <li>Découverte du codage, de la robotique, de l'IA et de la réalité virtuelle</li>
+                            </ul>
+                            <p class="lieu">Compiègne · 2023</p>
+                        </div>
+
+                        <div class="etape">
+                            <h4>Stage d'observation de 3e · Phénix Software</h4>
+                            <p class="specialite">Entreprise informatique</p>
+                            <ul>
+                                <li>Réparations informatiques et dépannage</li>
+                                <li>Création d'un logo et refonte d'un site web</li>
+                            </ul>
+                            <p class="lieu">Thourotte · du 17 au 21 janvier 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="colonne">
+                    <h3>Bénévolat</h3>
+                    <div class="frise">
+                        <div class="etape">
+                            <h4>AMAP Compiègne</h4>
+                            <p class="specialite">Distributions et journées solidaires auprès des producteurs</p>
+                        </div>
+
+                        <div class="etape">
+                            <h4>ONG Partage avec les enfants du monde</h4>
+                            <p class="specialite">Distribution de flyers et préparation d'événements</p>
+                        </div>
+
+                        <div class="etape">
+                            <h4>Badminton Club Compiègne (BCC)</h4>
+                            <p class="specialite">Aide à l'organisation de tournois, lotos et buvettes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Experiences - Fin -->
 
         <!-- Competences - Debut -->
         <section id="mescompetences">
             <h2>Mes compétences</h2>
+
+            <div class="groupes">
+                <div class="groupe">
+                    <h3>Langages & Programmation</h3>
+                    <div class="etiquettes">
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/csharp/csharp-original.svg" alt="">C#</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/python/python-original.svg" alt="">Python</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/php/php-original.svg" alt="">PHP</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/javascript/javascript-original.svg" alt="">JavaScript</span>
+                        <span><img src="logos/sql.png" alt="">SQL</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/html5/html5-original.svg" alt="">HTML</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/css3/css3-original.svg" alt="">CSS</span>
+                    </div>
+                </div>
+
+                <div class="groupe">
+                    <h3>Frameworks & Bibliothèques</h3>
+                    <div class="etiquettes">
+                        <span class="en-cours"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/symfony/symfony-original.svg" alt="">Symfony</span>
+                    </div>
+                </div>
+
+                <div class="groupe">
+                    <h3>Outils & Technologies</h3>
+                    <div class="etiquettes">
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/visualstudio/visualstudio-original.svg" alt="">Visual Studio</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/vscode/vscode-original.svg" alt="">VS Code</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/phpstorm/phpstorm-original.svg" alt="">PhpStorm</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/pycharm/pycharm-original.svg" alt="">PyCharm</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/jupyter/jupyter-original.svg" alt="">JupyterHub</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/git/git-original.svg" alt="">Git</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/github/github-original.svg" alt="">GitHub</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/gitlab/gitlab-original.svg" alt="">GitLab</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/mariadb/mariadb-original.svg" alt="">MariaDB</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/mysql/mysql-original.svg" alt="">MySQL</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/sqldeveloper/sqldeveloper-original.svg" alt="">SQL Developer</span>
+                        <span><img src="logos/poweramc.png" alt="">PowerAMC</span>
+                        <span class="en-cours"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/docker/docker-original.svg" alt="">Docker</span>
+                    </div>
+                </div>
+
+                <div class="groupe">
+                    <h3>Logiciels & Outils de gestion</h3>
+                    <div class="etiquettes">
+                        <span><img src="logos/word.png" alt="">Word</span>
+                        <span><img src="logos/excel.png" alt="">Excel</span>
+                        <span><img src="logos/powerpoint.png" alt="">PowerPoint</span>
+                        <span><img src="logos/powerbi.png" alt="">Power BI</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/canva/canva-original.svg" alt="">Canva</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/figma/figma-original.svg" alt="">Figma</span>
+                        <span class="en-cours"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/notion/notion-original.svg" alt="">Notion</span>
+                    </div>
+                </div>
+            </div>
+            <p class="legende"><span class="en-cours">...</span> = en cours d'apprentissage</p>
         </section>
         <!-- Competences - Fin -->
 
@@ -96,20 +306,217 @@
         <section id="mesrealisations">
             <h2>Mes réalisations</h2>
 
-            <div class="stack">
-                <div class="card c1">Test1</div>
-                <div class="card c2">Test2</div>
-                <div class="card c3">Test3</div>
-            </div>
+            <div class="cartes">
 
+                <!-- Nonogram - SAE 1.01 & SAE 1.02-->
+                <div class="carte">
+                    <img src="projets/nonogram.png" alt="Capture du jeu Nonogram">
+                    <div class="carte-contenu">
+                        <p class="categorie">SAÉ 1.01 & 1.02</p>
+                        <h4>Jeu Nonogram</h4>
+                        <p>Le jeu de logique Nonogram en Python avec PyGame et accompagné de tests.</p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>PyGame</span>
+                            <span>Tests</span>
+                        </div>
+                        <a href="https://github.com/ethanpilia/SAE-Nonogram---Developpement-d-un-jeu-Python" target="_blank" class="bouton-code">Voir le code ↗</a>
+                    </div>
+                </div>
+
+                <!-- Appli web - SAE 2.01 -->
+                <div class="carte">
+                    <img src="projets/films.png" alt="Capture de l'application de films">
+                    <div class="carte-contenu">
+                        <p class="categorie">SAÉ 2.01 · En collaboration avec Arthur BRODA</p>
+                        <h4>Application web de films</h4>
+                        <p>Application PHP pour consulter et gérer une base de films et d'acteurs : filtre par genre, fiches détaillées, création, modification et suppression de films.</p>
+                        <div class="tags">
+                            <span>PHP</span>
+                            <span>HTML / CSS</span>
+                            <span>SQL</span>
+                            <span>POO</span>
+                        </div>
+                        <a href="https://github.com/ethanpilia/SAE-2.01---Developpement-d-une-application-Web" target="_blank" class="bouton-code">Voir le code ↗</a>
+                    </div>
+                </div>
+
+                <!-- Maze - SAE S2 -->
+                <div class="carte">
+                    <img src="projets/maze.png" alt="Capture d'un labyrinthe généré">
+                    <div class="carte-contenu">
+                        <p class="categorie">SAÉ S2 · En collaboration avec Arthur BRODA</p>
+                        <h4>Génération de labyrinthes</h4>
+                        <p>Génération de labyrinthes avec plusieurs algorithmes, résolution (profondeur, largeur, main droite, Dijkstra) et calcul de métriques.</p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Jupyter</span>
+                            <span>Algorithmique</span>
+                            <span>Graphes</span>
+                        </div>
+                        <a href="https://github.com/ethanpilia/SAE-Maze" target="_blank" class="bouton-code">Voir le code ↗</a>
+                    </div>
+                </div>
+
+                <!-- BD - SAE 2.04 -->
+                <div class="carte">
+                    <img src="projets/fifa.png" alt="Capture du tableau de bord Power BI">
+                    <div class="carte-contenu">
+                        <p class="categorie">SAÉ 2.04 · En collaboration avec Arthur BRODA</p>
+                        <h4>Base de données FIFA 2022</h4>
+                        <p>Modélisation d'une base de données sur la Coupe du monde 2022, requêtes SQL et analyse des données avec Power BI.</p>
+                        <div class="tags">
+                            <span>SQL</span>
+                            <span>PowerAMC</span>
+                            <span>Power BI</span>
+                        </div>
+                        <a href="https://github.com/ethanpilia/SAE-2.04-BD" target="_blank" class="bouton-code">Voir le code ↗</a>
+                    </div>
+                </div>
+
+                <!-- VM - SAE 2.03 -->
+                <div class="carte">
+                    <img src="projets/vm.png" alt="Capture de la configuration du serveur">
+                    <div class="carte-contenu">
+                        <p class="categorie">SAÉ 2.03 · En collaboration avec Kris CRAJKOWSKI</p>
+                        <h4>Administration d'un serveur</h4>
+                        <p>Installation et configuration d'un serveur Linux sur machine virtuelle : Apache, HTTPS, PHP, MySQL, phpMyAdmin, Samba et Lufi.</p>
+                        <div class="tags">
+                            <span>Linux</span>
+                            <span>Apache</span>
+                            <span>HTTPS</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a href="https://github.com/ethanpilia/SAE-2.03-Reseaux" target="_blank" class="bouton-code">Voir le compte-rendu ↗</a>
+                    </div>
+                </div>
+
+                <!-- Portfolio -->
+                <div class="carte">
+                    <img src="projets/portfolio.png" alt="Capture du portfolio">
+                    <div class="carte-contenu">
+                        <p class="categorie">Projet personnel</p>
+                        <h4>Ce portfolio</h4>
+                        <p>Le site que vous êtes en train de visiter, codé en HTML et CSS, avec ma propre identité visuelle.</p>
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="https://github.com/ethanpilia/Portfolio_Ethan_PILIA" target="_blank" class="bouton-code">Voir le code ↗</a>
+                    </div>
+                </div>
+
+                <!-- Campus Event - SAE 3.01-->
+                <div class="carte">
+                    <img src="projets/logo_campus-events.png" alt="Logo Campus Event">
+                    <div class="carte-contenu">
+                        <p><span class="badge-en-cours">En cours</span></p>
+                        <p class="categorie">SAE 3.01 · En collaboration avec Ajitesh SARAVANABAVAN et Timothée TOUSSAINT</p>
+                        <h4>Campus Event</h4>
+                        <p>Site web qui regroupe les événements étudiants au même endroit. En équipe de 3, en méthode Agile : modélisation et organisation de l'application avant le développement en Symfony.</p>
+                        <div class="tags">
+                            <span>Agile</span>
+                            <span>Symfony</span>
+                            <span>MySQL</span>
+                            <span>Travail en équipe</span>
+                            <span>HTML / CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
         <!-- Realisations - Fin -->
 
         <!-- Contact - Debut -->
         <section id="contact">
             <h2>Me contacter</h2>
+
+            <div class="contact-grille">
+                <!-- Gauche -->
+                <div class="contact-appel">
+                    <p class="contact-petit">Disponible à partir du 5 avril 2027</p>
+                    <h3>Et si on travaillait ensemble ?</h3>
+                    <p>
+                        Je recherche un stage de 8 à 12 semaines en développement.
+                        Une offre, une question ou simplement envie d'échanger ?
+                        Écrivez-moi, je vous répondrai rapidement.
+                    </p>
+                    <div class="contact-boutons">
+                        <a href="mailto:ethanpilia1311@gmail.com" class="bouton-clair">M'écrire un email ↗</a>
+                        <a href="docs/CV Ethan PILIA.pdf" target="_blank" download class="bouton-contour">Mon CV ↓</a>
+                    </div>
+                </div>
+
+                <!-- Droite -->
+                <div class="contact-infos">
+                    <a href="mailto:ethanpilia1311@gmail.com" class="info">
+                        <span class="info-icone">
+                            <img src="https://cdn.simpleicons.org/gmail" alt="">
+                        </span>
+                        <span>
+                            <span class="contact-titre">Email</span>
+                            ethanpilia1311@gmail.com
+                        </span>
+                    </a>
+
+                    <a href="tel:+33695368787" class="info">
+                        <span class="info-icone">
+                            <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.460.0/icons/phone.svg" alt="">
+                        </span>
+                        <span>
+                            <span class="contact-titre">Téléphone</span>
+                            06 95 36 87 87
+                        </span>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/ethan-pilia-61404a434" target="_blank" class="info">
+                        <span class="info-icone">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/linkedin/linkedin-original.svg" alt="">
+                        </span>
+                        <span>
+                            <span class="contact-titre">LinkedIn</span>
+                            Ethan Pilia
+                        </span>
+                    </a>
+
+                    <a href="https://github.com/ethanpilia" target="_blank" class="info">
+                        <span class="info-icone">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/github/github-original.svg" alt="">
+                        </span>
+                        <span>
+                            <span class="contact-titre">GitHub</span>
+                            ethanpilia
+                        </span>
+                    </a>
+
+                    <div class="info">
+                        <span class="info-icone">
+                            <img src="https://cdn.simpleicons.org/googlemaps" alt="">
+                        </span>
+                        <span>
+                            <span class="contact-titre">Localisation</span>
+                            Compiègne · Reims
+                        </span>
+                    </div>
+                </div>
+
+            </div>
         </section>
         <!-- Contact - Fin -->
+        
+        <footer id="pied">
+            <p>© 2026 Ethan Pilia</p>
+
+            <div class="pied-liens">
+                <a href="https://www.linkedin.com/in/ethan-pilia-61404a434" target="_blank" aria-label="LinkedIn">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/linkedin/linkedin-original.svg" alt="">
+                </a>
+                <a href="https://github.com/ethanpilia" target="_blank" aria-label="GitHub">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.18.0/icons/github/github-original.svg" alt="">
+                </a>
+            </div>
+        </footer>
 
     </body>
 

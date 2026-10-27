@@ -25,7 +25,7 @@ section {
     margin: 0 auto;
     padding: 80px 40px;
     min-height: 60vh;
-    scroll-margin-top: 30px;
+    scroll-margin-top: 50px;
 }
 
 body {
@@ -39,7 +39,7 @@ body {
     color: #587d71;
     box-sizing: border-box;
 }
-
+/* --------------------------------------------------------------------------------------------------------------- */
 /* Barre - Debut */
 #barre {
     display: flex;
@@ -92,7 +92,7 @@ nav a:hover {
     border-radius: 8px;
 }
 /* Barre - Fin */
-
+/* --------------------------------------------------------------------------------------------------------------- */
 /* Accueil - Debut */
 #accueil {
     padding-top: 30px;
@@ -101,10 +101,15 @@ nav a:hover {
 
 .accueil-haut {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     text-align: left;
+}
+
+.accueil-gauche {
+    flex: 1 1 450px;
 }
 
 .code {
@@ -130,6 +135,7 @@ h1 {
     font-size: 1.2rem;
     color: var(--noir);
     line-height: 1.6;
+    max-height: 650px;
 }
 
 #accueil .formation {
@@ -164,104 +170,477 @@ h1 {
     text-align: left;
 }
 /* Accueil - Fin */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* A propos - Debut */
+.apropos {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    text-align: left;
+}
 
+.photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
 
+.apropos-texte h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
 
-/* Realisations - Debut */
-.stack {
+.apropos-texte p {
+    color: var(--noir);
+    line-height: 1.6;
+}
+
+.bouton-cv {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: var(--vert);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.bouton-cv:hover {
+    background: var(--noir);
+}
+
+#aproposdemoi h3 {
+    font-size: 1.8rem;
+    color: var(--noir);
+    text-align: center;
+    margin-top: 70px;
+}
+
+.ligne-infos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ligne-infos p {
+    font-size: 1.3rem;
+    color: var(--noir);
+    margin: 0;
+    padding: 15px 30px;
+    background: color-mix(in srgb, var(--beige) 60%, transparent);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.ligne-infos p:first-child {
+    border-left: none;
+}
+
+.niveau {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--vert);
+}
+
+.drapeau {
+    width: 28px;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.icone-interet {
+    width: 28px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+/* A propos - Fin */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Parcours - Debut */
+#monparcours h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+.frise {
+    border-left: 2px solid var(--noir);
+    margin-left: 10px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 2px;
+    text-align: left;
+}
+
+.etape {
     position: relative;
-    width: 180px;
-    height: 240px;
+    margin-bottom: 40px;
 }
 
-.card {
+.etape::before {
+    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 180px;
-    height: 240px;
-    border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-    transition: transform 0.5s cubic-bezier(.2, .9, .3, 1.2);
+    left: -39px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--noir);
 }
 
-.c1 {
-    background: linear-gradient(135deg, #ff6a00, #ff2d95);
-    transform: rotate(-6deg);
-    z-index: 3;
+.etape h4 {
+    font-size: 1.4rem;
+    color: var(--noir);
+    margin: 0;
 }
 
-.c2 {
-    background: linear-gradient(135deg, #00c9ff, #92fe9d);
-    transform: rotate(0deg);
-    z-index: 2;
+.specialite {
+    font-size: 1.1rem;
+    color: var(--vert);
+    margin: 5px 0;
 }
 
-.c3 {
-    background: linear-gradient(135deg, #6a00ff, #00c9ff);
-    transform: rotate(6deg);
-    z-index: 1;
+.lieu {
+    font-style: italic;
+    color: var(--noir);
+    opacity: 0.7;
+    margin: 0;
+}
+/* Parcours - Fin */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Experiences - Debut */
+#mesexperiences h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
 }
 
-.stack:hover .c1 {
-    transform: translate(-90px, -30px) rotate(-18deg);
+#mesexperiences h3 {
+    font-size: 1.8rem;
+    color: var(--noir);
+    text-align: left;
+    margin-top: 50px;
 }
 
-.stack:hover .c2 {
-    transform: translate(0px, -55px) rotate(0deg);
+.deux-colonnes {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
 }
 
-.stack:hover .c3 {
-    transform: translate(90px, -30px) rotate(18deg);
+.colonne {
+    max-width: 500px;
+}
+
+.etape ul {
+    color: var(--noir);
+    margin: 5px 0 10px;
+    padding-left: 20px;
+    text-align: left;
+    line-height: 1.6;
+}
+/* Experiences - Fin */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Competences - Debut */
+#mescompetences h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+.groupes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 60px;
+}
+
+.groupe {
+    flex: 1 1 40%;
+    max-width: 600px;
+}
+
+.groupe h3 {
+    color: var(--noir);
+    font-size: 1.8rem;
+    margin: 0 0 20px;
+}
+
+.etiquettes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.etiquettes span,
+.legende span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: color-mix(in srgb, var(--beige) 70%, transparent);
+    color: var(--noir);
+    border: 3px solid transparent;
+    border-radius: 30px;
+}
+
+.etiquettes img {
+    width: 24px;
+    height: 24px;
+}
+
+.en-cours {
+    border-color: var(--vert) !important;
+}
+
+.legende {
+    text-align: center;
+    color: var(--noir);
+    margin-top: 40px;
+}
+/* Competences - Fin */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Realisations - Debut */
+#mesrealisations h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+.cartes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.carte {
+    flex: 1 1 300px;
+    max-width: 400px;
+    background: color-mix(in srgb, white 50%, transparent);
+    border: 1px solid #c9c7c0;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.carte img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: contain;
+    background: var(--fond);
+    padding: 10px;
+    display: block;
+}
+
+.carte-contenu {
+    padding: 20px 25px 25px;
+}
+
+.categorie {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--vert);
+    margin: 0;
+}
+
+.carte h4 {
+    font-size: 1.4rem;
+    color: var(--noir);
+    margin: 10px 0;
+}
+
+.carte-contenu p {
+    color: var(--noir);
+    line-height: 1.5;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0 20px;
+}
+
+.tags span {
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    border: 1px solid #b0aea7;
+    border-radius: 20px;
+    color: var(--noir);
+}
+
+.bouton-code {
+    display: inline-block;
+    padding: 8px 16px;
+    background: var(--vert);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.bouton-code:hover {
+    background: var(--noir);
+}
+
+.badge-en-cours {
+    padding: 2px 8px;
+    background: var(--vert);
+    color: white;
+    border-radius: 10px;
 }
 /* Realisations - Fin */
-
-
-/* Tablette */
-@media (max-width: 900px) {
-    .accueil-haut {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    h1 {
-        font-size: 3.5rem;
-    }
-
-    nav a {
-        margin-left: 0;
-        margin-right: 20px;
-    }
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Me contacter - Debut */
+#contact h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
 }
 
-/* Téléphone */
-@media (max-width: 600px) {
-    section {
-        padding: 50px 20px;
-    }
+.contact-grille {
+    display: flex;
+    gap: 30px;
+    text-align: left;
+}
 
-    #barre {
-        padding: 15px 20px;
-    }
+/* gauche */
+.contact-appel {
+    flex: 1;
+    padding: 45px;
+    background: var(--vert);
+    color: white;
+    border-radius: 16px;
+}
 
-    h1 {
-        font-size: 2.5rem;
-    }
+.contact-petit {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    margin: 0;
+}
 
-    .bandeau {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
+.contact-appel h3 {
+    font-size: 2.2rem;
+    margin: 10px 0 20px;
+}
 
-    .code {
-        font-size: 0.75rem;
-    }
-    nav {
-        gap: 8px 18px;
-    }
+.contact-appel p {
+    line-height: 1.6;
+}
 
-    nav a {
-        font-size: 15px;
-    }
+.contact-boutons {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.bouton-clair,
+.bouton-contour {
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.bouton-clair {
+    background: var(--fond);
+    color: var(--noir);
+}
+
+.bouton-clair:hover {
+    background: white;
+}
+
+.bouton-contour {
+    border: 1px solid white;
+    color: white;
+}
+
+.bouton-contour:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* droite */
+.contact-infos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 25px;
+    background: color-mix(in srgb, white 50%, transparent);
+    border: 1px solid #c9c7c0;
+    border-radius: 12px;
+    color: var(--noir);
+    text-decoration: none;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+a.info:hover {
+    border-color: var(--vert);
+    transform: translateX(5px);
+}
+
+.info-icone {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--vert);
+    font-weight: bold;
+}
+
+.contact-titre {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--vert);
+    margin-bottom: 3px;
+}
+
+.info-icone img {
+    width: 26px;
+    height: 26px;
+}
+/* Me contacter - Fin */
+
+/* Bas de page */
+#pied {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    border-top: 1px solid #c9c7c0;
+    color: var(--noir);
+}
+
+#pied p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.pied-liens {
+    display: flex;
+    gap: 20px;
+}
+
+.pied-liens img {
+    width: 26px;
+    transition: transform 0.2s;
+    
+}
+
+.pied-liens a:hover img {
+    transform: scale(1.15);
 }
