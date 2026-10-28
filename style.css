@@ -614,8 +614,8 @@ a.info:hover {
     height: 26px;
 }
 /* Me contacter - Fin */
-
-/* Bas de page */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Bas de page - Debut */
 #pied {
     display: flex;
     justify-content: space-between;
@@ -644,3 +644,137 @@ a.info:hover {
 .pied-liens a:hover img {
     transform: scale(1.15);
 }
+/* Bas de page - Fin */
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Version mobile - Debut */
+@media (max-width: 800px) {
+
+    section {
+        padding: 50px 20px;
+        min-height: auto;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    h2,
+    .apropos-texte h2,
+    #monparcours h2,
+    #mesexperiences h2,
+    #mescompetences h2,
+    #mesrealisations h2,
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    /* Barre */
+    #barre {
+        position: static;
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 8px 16px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    /* Accueil */
+    .accueil-gauche {
+        flex-basis: 100%;
+    }
+
+    .code {
+        width: 100%;
+        font-size: 0.75rem;
+        overflow-x: auto;
+    }
+
+    .bandeau {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    /* À propos */
+    .apropos {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .apropos-texte p {
+        text-align: left;
+    }
+
+    .ligne-infos p {
+        font-size: 1.1rem;
+        padding: 12px 20px;
+    }
+
+    /* Expériences */
+    .deux-colonnes {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* Compétences */
+    .groupe {
+        flex-basis: 100%;
+    }
+
+    .groupe h3 {
+        font-size: 1.4rem;
+    }
+
+    /* Réalisations */
+    .carte {
+        flex-basis: 100%;
+    }
+
+    /* Contact */
+    .contact-grille {
+        flex-direction: column;
+    }
+
+    .contact-appel {
+        padding: 30px 25px;
+    }
+
+    .contact-appel h3 {
+        font-size: 1.7rem;
+    }
+
+    .contact-boutons {
+        flex-wrap: wrap;
+    }
+
+    .info {
+        padding: 15px 18px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Bas de page */
+    #pied {
+        flex-direction: column;
+        gap: 15px;
+        padding: 25px 20px;
+    }
+}
+/* Version mobile - Fin */
